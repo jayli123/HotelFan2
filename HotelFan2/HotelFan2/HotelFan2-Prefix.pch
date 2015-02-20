@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIView+Extension.h"
+    #import "UIBarButtonItem+Extension.h"
+
+#ifdef DEBUG
+#define DEBUGLOG(...) NSLog(__VA_ARGS__)
+#else
+#define DEBUGLOG(...)
+#endif
+
+
+//随机色
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+//是否为ios7
+#define ios [[UIDevice currentDevice].systemVersion doubleValue]
+
+
+#endif
