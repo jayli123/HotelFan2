@@ -8,8 +8,7 @@
 
 #import "TabBarViewController.h"
 #import "NavigationController.h"
-#import "MyFavoriteVC.h"
-#import "SearchCardVC.h"
+#import "MyFavoriteController.h"
 
 @interface TabBarViewController ()
 
@@ -23,7 +22,7 @@
     
     self.tabBar.backgroundImage = [UIImage imageNamed:@"public_tab_bar_background_ios7"];
    
-    MyFavoriteVC *vc1 = [[MyFavoriteVC alloc]init];
+    MyFavoriteController *vc1 = [[MyFavoriteController alloc]init];
     [self addOneChildViewController:vc1 withTitle:@"优惠" imageName:@"public_tabbar_item1" selectImageName:@"public_tabbar_item1_sel"];
     
     UIViewController *vc2 = [[UIViewController alloc]init];

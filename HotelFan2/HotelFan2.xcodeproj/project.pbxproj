@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CA6486F1A96F2CC0095B379 /* MyFavoriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA6486C1A96F2CC0095B379 /* MyFavoriteController.m */; };
 		6CCD897C1A92EEE5000E540F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD897B1A92EEE5000E540F /* Foundation.framework */; };
 		6CCD897E1A92EEE5000E540F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD897D1A92EEE5000E540F /* CoreGraphics.framework */; };
 		6CCD89801A92EEE5000E540F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD897F1A92EEE5000E540F /* UIKit.framework */; };
@@ -23,8 +24,6 @@
 		6CCD89D11A931C01000E540F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89D01A931C01000E540F /* NavigationController.m */; };
 		6CCD89D81A93238A000E540F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89D71A93238A000E540F /* UIBarButtonItem+Extension.m */; };
 		6CCD89DB1A932E95000E540F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89DA1A932E95000E540F /* UIView+Extension.m */; };
-		6CE891F91A96124300B94400 /* MyFavoriteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE891F61A96124300B94400 /* MyFavoriteVC.m */; };
-		6CE891FF1A9613BB00B94400 /* SearchCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE891FE1A9613BB00B94400 /* SearchCardVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CA6486B1A96F2CC0095B379 /* MyFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteController.h; sourceTree = "<group>"; };
+		6CA6486C1A96F2CC0095B379 /* MyFavoriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteController.m; sourceTree = "<group>"; };
 		6CCD89781A92EEE5000E540F /* HotelFan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelFan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCD897B1A92EEE5000E540F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CCD897D1A92EEE5000E540F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +63,6 @@
 		6CCD89D71A93238A000E540F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		6CCD89D91A932E95000E540F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		6CCD89DA1A932E95000E540F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		6CE891F51A96124300B94400 /* MyFavoriteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteVC.h; sourceTree = "<group>"; };
-		6CE891F61A96124300B94400 /* MyFavoriteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteVC.m; sourceTree = "<group>"; };
-		6CE891FD1A9613BB00B94400 /* SearchCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCardVC.h; sourceTree = "<group>"; };
-		6CE891FE1A9613BB00B94400 /* SearchCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCardVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +89,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA648691A96F2CC0095B379 /* Favorite(优惠) */ = {
+			isa = PBXGroup;
+			children = (
+				6CA6486A1A96F2CC0095B379 /* Controller */,
+				6CA6486D1A96F2CC0095B379 /* Model */,
+				6CA6486E1A96F2CC0095B379 /* View */,
+			);
+			path = "Favorite(优惠)";
+			sourceTree = "<group>";
+		};
+		6CA6486A1A96F2CC0095B379 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CA6486B1A96F2CC0095B379 /* MyFavoriteController.h */,
+				6CA6486C1A96F2CC0095B379 /* MyFavoriteController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6CA6486D1A96F2CC0095B379 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CA6486E1A96F2CC0095B379 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6CCD896F1A92EEE5000E540F = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +193,8 @@
 		6CCD89B01A930059000E540F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6CA648691A96F2CC0095B379 /* Favorite(优惠) */,
 				6CCD89B91A930059000E540F /* Main(主要) */,
-				6CE891F31A96124300B94400 /* Favorite(优惠) */,
 				6CCD89B11A930059000E540F /* CardBag(卡包) */,
 				6CCD89C21A930059000E540F /* CheckIn(查询) */,
 				6CCD89C61A930059000E540F /* Profile(我) */,
@@ -325,42 +355,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		6CE891F31A96124300B94400 /* Favorite(优惠) */ = {
-			isa = PBXGroup;
-			children = (
-				6CE891F41A96124300B94400 /* Controller */,
-				6CE891F71A96124300B94400 /* Model */,
-				6CE891F81A96124300B94400 /* View */,
-			);
-			name = "Favorite(优惠)";
-			path = "Main(主要)/Favorite(优惠)";
-			sourceTree = "<group>";
-		};
-		6CE891F41A96124300B94400 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6CE891F51A96124300B94400 /* MyFavoriteVC.h */,
-				6CE891F61A96124300B94400 /* MyFavoriteVC.m */,
-				6CE891FD1A9613BB00B94400 /* SearchCardVC.h */,
-				6CE891FE1A9613BB00B94400 /* SearchCardVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6CE891F71A96124300B94400 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6CE891F81A96124300B94400 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -461,8 +455,7 @@
 				6CCD89CB1A930059000E540F /* main.m in Sources */,
 				6CCD89D11A931C01000E540F /* NavigationController.m in Sources */,
 				6CCD89DB1A932E95000E540F /* UIView+Extension.m in Sources */,
-				6CE891FF1A9613BB00B94400 /* SearchCardVC.m in Sources */,
-				6CE891F91A96124300B94400 /* MyFavoriteVC.m in Sources */,
+				6CA6486F1A96F2CC0095B379 /* MyFavoriteController.m in Sources */,
 				6CCD89CE1A930188000E540F /* TabBarViewController.m in Sources */,
 				6CCD89CA1A930059000E540F /* AppDelegate.m in Sources */,
 			);
