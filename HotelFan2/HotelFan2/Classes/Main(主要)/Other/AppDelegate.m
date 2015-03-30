@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TabBarViewController.h"
+#import "LoggingInViewController.h"
 
 @implementation AppDelegate
 
@@ -15,9 +15,10 @@
 {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
-    self.window.rootViewController = tabBarVC;
-    
+//    TabBarViewController *tabBarVC = [[TabBarViewController alloc]init];
+//    self.window.rootViewController = tabBarVC;
+    LoggingInViewController *loginVC = [[LoggingInViewController alloc]init];
+    self.window.rootViewController = loginVC;
     [self.window makeKeyAndVisible];
     
     return YES;
