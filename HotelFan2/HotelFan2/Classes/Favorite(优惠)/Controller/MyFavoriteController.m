@@ -8,6 +8,7 @@
 
 #import "MyFavoriteController.h"
 #import "UIBarButtonItem+Extension.h"
+#import "SAMSearchBar.h"
 
 @interface MyFavoriteController ()
 
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
  
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"addCard_search_icon" highImage:@"addCard_search_icon" target:self action:@selector(click) ];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"kazhu_nav_search" highImage:@"kazhu_nav_search" target:self action:@selector(click) ];
 }
 
 #pragma mark - Table view data source
@@ -59,6 +60,22 @@
 - (void)click
 {
     DEBUGLOG(@"CLICK");
+//    MyFavoriteController *textVC = [[MyFavoriteController alloc]init];
+//    textVC.view.backgroundColor = [UIColor blueColor];
+//    [self.navigationController presentViewController:textVC animated:NO completion:nil];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"kazhu_nav_cancel" highImage:@"kazhu_nav_cancel" target:self action:@selector(cancle)];
+    
+    
+    SAMSearchBar *serchView = [SAMSearchBar searchBar];
+    serchView.height = 35;
+    serchView.width = 270;
+    self.navigationItem.titleView = serchView;
+    
+    //self.navigationIte.titleView = []
 }
 
+- (void)cancle
+{
+     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"kazhu_nav_search" highImage:@"kazhu_nav_search" target:self action:@selector(click) ];
+}
 @end

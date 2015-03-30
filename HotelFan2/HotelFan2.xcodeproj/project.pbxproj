@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C8E25701AA5A4BD005B4279 /* SAMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E256F1AA5A4BD005B4279 /* SAMSearchBar.m */; };
 		6CA6486F1A96F2CC0095B379 /* MyFavoriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA6486C1A96F2CC0095B379 /* MyFavoriteController.m */; };
 		6CCD897C1A92EEE5000E540F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD897B1A92EEE5000E540F /* Foundation.framework */; };
 		6CCD897E1A92EEE5000E540F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCD897D1A92EEE5000E540F /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 		6CCD89D11A931C01000E540F /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89D01A931C01000E540F /* NavigationController.m */; };
 		6CCD89D81A93238A000E540F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89D71A93238A000E540F /* UIBarButtonItem+Extension.m */; };
 		6CCD89DB1A932E95000E540F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD89DA1A932E95000E540F /* UIView+Extension.m */; };
+		FD2C11B50C30D2407AFB1B7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1EA9193AFA3A4B3B3EAA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A4C5D670DA37A965D1A36D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6C8E256E1AA5A4BD005B4279 /* SAMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSearchBar.h; sourceTree = "<group>"; };
+		6C8E256F1AA5A4BD005B4279 /* SAMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSearchBar.m; sourceTree = "<group>"; };
 		6CA6486B1A96F2CC0095B379 /* MyFavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteController.h; sourceTree = "<group>"; };
 		6CA6486C1A96F2CC0095B379 /* MyFavoriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteController.m; sourceTree = "<group>"; };
 		6CCD89781A92EEE5000E540F /* HotelFan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelFan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +68,8 @@
 		6CCD89D71A93238A000E540F /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		6CCD89D91A932E95000E540F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		6CCD89DA1A932E95000E540F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8ACA1EA9193AFA3A4B3B3EAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAAD864B2AD90ED975C02A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 				6CCD897E1A92EEE5000E540F /* CoreGraphics.framework in Frameworks */,
 				6CCD89801A92EEE5000E540F /* UIKit.framework in Frameworks */,
 				6CCD897C1A92EEE5000E540F /* Foundation.framework in Frameworks */,
+				FD2C11B50C30D2407AFB1B7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6639D87E10751FDD1E239B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AAAD864B2AD90ED975C02A2 /* Pods.debug.xcconfig */,
+				6A4C5D670DA37A965D1A36D8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6CA648691A96F2CC0095B379 /* Favorite(优惠) */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +135,8 @@
 		6CA6486E1A96F2CC0095B379 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C8E256E1AA5A4BD005B4279 /* SAMSearchBar.h */,
+				6C8E256F1AA5A4BD005B4279 /* SAMSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +148,7 @@
 				6CCD89A01A92EEE5000E540F /* HotelFan2Tests */,
 				6CCD897A1A92EEE5000E540F /* Frameworks */,
 				6CCD89791A92EEE5000E540F /* Products */,
+				6639D87E10751FDD1E239B36 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +168,7 @@
 				6CCD897D1A92EEE5000E540F /* CoreGraphics.framework */,
 				6CCD897F1A92EEE5000E540F /* UIKit.framework */,
 				6CCD899A1A92EEE5000E540F /* XCTest.framework */,
+				8ACA1EA9193AFA3A4B3B3EAA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -362,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CCD89AA1A92EEE5000E540F /* Build configuration list for PBXNativeTarget "HotelFan2" */;
 			buildPhases = (
+				89E25D5422C8724DFE6B4150 /* Check Pods Manifest.lock */,
 				6CCD89741A92EEE5000E540F /* Sources */,
 				6CCD89751A92EEE5000E540F /* Frameworks */,
 				6CCD89761A92EEE5000E540F /* Resources */,
+				BEECC5F7112E1A6DBD1EF6A2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,6 +469,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		89E25D5422C8724DFE6B4150 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEECC5F7112E1A6DBD1EF6A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CCD89741A92EEE5000E540F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -456,6 +512,7 @@
 				6CCD89D11A931C01000E540F /* NavigationController.m in Sources */,
 				6CCD89DB1A932E95000E540F /* UIView+Extension.m in Sources */,
 				6CA6486F1A96F2CC0095B379 /* MyFavoriteController.m in Sources */,
+				6C8E25701AA5A4BD005B4279 /* SAMSearchBar.m in Sources */,
 				6CCD89CE1A930188000E540F /* TabBarViewController.m in Sources */,
 				6CCD89CA1A930059000E540F /* AppDelegate.m in Sources */,
 			);
@@ -571,6 +628,7 @@
 		};
 		6CCD89AB1A92EEE5000E540F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AAAD864B2AD90ED975C02A2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -584,6 +642,7 @@
 		};
 		6CCD89AC1A92EEE5000E540F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4C5D670DA37A965D1A36D8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

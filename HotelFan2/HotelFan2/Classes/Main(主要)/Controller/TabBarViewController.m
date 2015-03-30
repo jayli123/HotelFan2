@@ -38,7 +38,8 @@
 
 - (void)addOneChildViewController:(UIViewController *)oneVC withTitle:(NSString *)titleName imageName:(NSString *)imageName selectImageName:(NSString *)selectImageName
 {
-    oneVC.view.backgroundColor = RandomColor;
+    //oneVC.view.backgroundColor = RandomColor;
+    oneVC.view.backgroundColor = [UIColor whiteColor];
     oneVC.title = titleName;
     oneVC.tabBarItem.image = [UIImage imageNamed:imageName];
     UIImage *selectImage = [UIImage imageNamed:selectImageName];
